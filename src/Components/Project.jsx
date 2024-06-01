@@ -4,13 +4,13 @@ import Navbar from "./Navbar";
 const Project = () => {
   return (
     <>
-      <div className="w-full h-screen overflow-hidden bg-black flex flex-col gap-1">
+      <div className="w-full h-screen overflow-auto bg-black flex flex-col md:overflow-hidden gap-1">
         <div>
           <Navbar />
         </div>
-        <div className=" w-full h-full flex flex-col gap-1 ">
-          <div className="w-full h-96 flex gap-2 py-2">
-            <div className="w-1/2 h-auto flex flex-col gap-1">
+        <div className="w-full h-full flex flex-col gap-1">
+          <div className="w-full h-96 flex flex-col md:flex-row gap-2 py-2">
+            <div className="w-full md:w-1/2 h-auto flex flex-col gap-1">
               <h1 className="text-white text-3xl font-semibold p-4">
                 SHOPKART🛍️ - Ecommerce Website
               </h1>
@@ -35,7 +35,7 @@ const Project = () => {
                 using Tailwind CSS and DaisyUI
               </p>
             </div>
-            <div className="w-1/2 h-full my-6 flex justify-center items-center flex-col ">
+            <div className="w-full md:w-1/2 h-full my-6 flex justify-center items-center flex-col">
               <iframe
                 className="w-full h-96"
                 src="https://www.youtube.com/embed/oKUMsl3JCnc?si=PmCyIqw1w14Izgju"
